@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Spring AI with Java - A Practical Developer Guide</title>
+    <meta name="description" content="Build AI-powered applications with Spring AI and Java. Learn prompt engineering, function calling, RAG, and more in this comprehensive course.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <i class="fas fa-robot"></i>
+                    <span>Spring AI Mastery</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#curriculum">What You'll Learn</a></li>
+                    <li><a href="#instructor">Instructor</a></li>
+                    <li><a href="#enroll" class="cta-button">Enroll Now</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Master <span class="highlight">Spring AI</span> with Java
+                </h1>
+                <h2 class="hero-subtitle">A Practical Developer Guide</h2>
+                <p class="hero-description">
+                    Build intelligent, AI-powered applications using Spring AI with Java & Spring Boot. 
+                    From prompt engineering to RAG implementation, learn everything you need to integrate AI into your enterprise applications.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <span>Comprehensive Course</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-code"></i>
+                        <span>Hands-on Projects</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificate Included</span>
+                    </div>
+                </div>
+                <a href="https://www.udemy.com/course/mastering-spring-ai/?referralCode=464DAC2A704ECA7A8266" 
+                   class="hero-cta" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-play"></i>
+                    Start Learning Today
+                </a>
+            </div>
+            <div class="hero-visual">
+                <div class="code-preview">
+                    <div class="code-header">
+                        <div class="code-controls">
+                            <span class="control red"></span>
+                            <span class="control yellow"></span>
+                            <span class="control green"></span>
+                        </div>
+                        <span class="filename">SpringAIController.java</span>
+                    </div>
+                    <div class="code-content">
+                        <pre><code>@RestController
+public class AIController {
+    
+    @Autowired
+    private ChatClient chatClient;
+    
+    @PostMapping("/chat")
+    public String chat(@RequestBody String prompt) {
+        return chatClient.call(prompt);
+    }
+    
+    @PostMapping("/generate-image")
+    public ImageResponse generateImage(
+        @RequestBody ImageRequest request) {
+        return imageClient.call(request);
+    }
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose This Course?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Prompt Engineering</h3>
+                    <p>Master the art of crafting effective prompts, using templates, and generating structured outputs with Spring AI.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-memory"></i>
+                    </div>
+                    <h3>Memory & Context</h3>
+                    <p>Build multi-turn conversations that remember user input and maintain continuity across interactions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Function Calling</h3>
+                    <p>Integrate AI with real-world data and services, handle structured results, and manage errors effectively.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>RAG Implementation</h3>
+                    <p>Query documents, work with persistent vector stores, and handle multi-document knowledge systems.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3>Image Processing</h3>
+                    <p>Caption, generate, and style images to create comprehensive multimodal AI applications.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Production Ready</h3>
+                    <p>Learn best practices for building scalable and maintainable AI-powered enterprise applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You'll Learn Section -->
+    <section id="curriculum" class="curriculum">
+        <div class="container">
+            <h2 class="section-title">What You'll Learn</h2>
+            <div class="curriculum-content">
+                <div class="curriculum-list">
+                    <div class="curriculum-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Build AI-powered apps using Spring AI with Java & Spring Boot</span>
+                    </div>
+                    <div class="curriculum-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Master prompt engineering with system, user, assistant messages and Prompt Templates</span>
+                    </div>
+                    <div class="curriculum-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Work with memory & context to create multi-turn, human-like conversations</span>
+                    </div>
+                    <div class="curriculum-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Implement function calling & tools for real-world tasks like weather APIs and Database integrations</span>
+                    </div>
+                    <div class="curriculum-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Apply RAG techniques to query PDFs and multiple documents with vector stores</span>
+                    </div>
+                    <div class="curriculum-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Learn best practices for scalable, production-ready AI integrations</span>
+                    </div>
+                    <div class="curriculum-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Work with images - captioning, image generation, and styling images</span>
+                    </div>
+                </div>
+                <div class="curriculum-visual">
+                    <div class="tech-stack">
+                        <h3>Technologies You'll Master</h3>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Spring AI</span>
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">Spring Boot</span>
+                            <span class="tech-badge">OpenAI API</span>
+                            <span class="tech-badge">Vector Stores</span>
+                            <span class="tech-badge">RAG</span>
+                            <span class="tech-badge">LLMs</span>
+                            <span class="tech-badge">Multimodal AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section class="requirements">
+        <div class="container">
+            <h2 class="section-title">Course Requirements</h2>
+            <div class="requirements-grid">
+                <div class="requirement-item">
+                    <i class="fab fa-java"></i>
+                    <span>Basic knowledge of Java programming</span>
+                </div>
+                <div class="requirement-item">
+                    <i class="fas fa-leaf"></i>
+                    <span>Familiarity with Spring Boot (controllers, services, configs)</span>
+                </div>
+                <div class="requirement-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>An IDE like IntelliJ IDEA or VS Code installed</span>
+                </div>
+                <div class="requirement-item">
+                    <i class="fas fa-key"></i>
+                    <span>An OpenAI API key (free/paid) to follow hands-on examples</span>
+                </div>
+                <div class="requirement-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Curiosity to explore how AI integrates with real apps</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="audience">
+        <div class="container">
+            <h2 class="section-title">Who This Course Is For</h2>
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Java Developers</h3>
+                    <p>Who want to build AI-powered applications and stay ahead in the industry</p>
+                </div>
+                <div class="audience-card">
+                    <i class="fas fa-cog"></i>
+                    <h3>Spring Boot Engineers</h3>
+                    <p>Exploring generative AI and LLMs integration in enterprise applications</p>
+                </div>
+                <div class="audience-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend Developers</h3>
+                    <p>Interested in RAG, function calling, and multimodality features</p>
+                </div>
+                <div class="audience-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI Enthusiasts</h3>
+                    <p>Curious about AI-powered chatbots and intelligent assistants</p>
+                </div>
+                <div class="audience-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Tech Leaders</h3>
+                    <p>Aiming to build scalable AI features in Spring Boot applications</p>
+                </div>
+                <div class="audience-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Enterprise Developers</h3>
+                    <p>Interested in combining enterprise Java with modern AI workflows</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor Section -->
+    <section id="instructor" class="instructor">
+        <div class="container">
+            <h2 class="section-title">Meet Your Instructors</h2>
+            <div class="instructor-content">
+                <div class="instructor-card">
+                    <div class="instructor-info">
+                        <h3>Infiproton Tech & Harish B N</h3>
+                        <p class="instructor-title">Software Engineer | Mentor | Your Guide to Real-World Coding Skills</p>
+                        <div class="instructor-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-star"></i>
+                                <span>5.0 Instructor Rating</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span>2,775+ Students</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-clock"></i>
+                                <span>20+ Years Experience</span>
+                            </div>
+                        </div>
+                        <p class="instructor-bio">
+                            With over 20 years of experience in software development, Harish specializes in 
+                            building modern web apps, exploring APIs, and simplifying complex technologies for learners. 
+                            At Infiproton Tech, the focus is on helping developers master real-world technologies 
+                            through practical insights and clear explanations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="enroll" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Build AI-Powered Applications?</h2>
+                <p>Join thousands of developers mastering Spring AI and take your Java skills to the next level</p>
+                <a href="https://www.udemy.com/course/mastering-spring-ai/?referralCode=464DAC2A704ECA7A8266" 
+                   class="cta-button-large" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-graduation-cap"></i>
+                    Enroll in the Course
+                </a>
+                <p class="cta-note">Available on Udemy • Certificate of Completion Included</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Spring AI Mastery</h4>
+                    <p>Master the future of enterprise Java development with AI integration.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Course</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#curriculum">Curriculum</a></li>
+                        <li><a href="#instructor">Instructor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://www.udemy.com/course/mastering-spring-ai/?referralCode=464DAC2A704ECA7A8266" target="_blank">Udemy Course</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Spring AI Mastery Course. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
