@@ -1,6 +1,6 @@
 # Spring AI Course Marketing Website
 
-A beautiful, responsive marketing website for the "Mastering Spring AI with Java" course on Udemy.
+A beautiful, responsive marketing website for the "Spring AI with Java: Build AI-Powered Applications" course on Udemy.
 
 ## 🚀 Live Demo
 
@@ -71,7 +71,7 @@ This website is designed to work seamlessly with GitHub Pages:
 
 ## 📞 Contact
 
-For course enrollment, visit: [Mastering Spring AI with Java](https://www.udemy.com/course/mastering-spring-ai/?referralCode=464DAC2A704ECA7A8266)
+For course enrollment, visit: [Spring AI with Java: Build AI-Powered Applications](https://www.udemy.com/course/mastering-spring-ai/?referralCode=464DAC2A704ECA7A8266)
 
 ## 📄 License
 
