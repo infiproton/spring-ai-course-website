@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Allow all bots to crawl the site
+Disallow: 
+
+# Sitemap location
+Sitemap: https://springai.infiproton.com/sitemap.xml
+
+# Crawl delay (optional - helps with server load)
+Crawl-delay: 1
+
+# Specific instructions for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
